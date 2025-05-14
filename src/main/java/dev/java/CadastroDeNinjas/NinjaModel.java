@@ -7,8 +7,8 @@ import jakarta.persistence.*;
 @Table(name = "tb_cadastro")
 public class NinjaModel {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id // a clase que estiver logo abaixo vai ser declarado como o id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // para fazer o id ser sequencial dentro do bd
     Long id;
     String nome;
     String email;
